@@ -81,32 +81,6 @@ Value - Оценка (от 1 до 5)
               workbook.write(fileOut);
               fileOut.flush();
               fileOut.close();             
-////////////////////////   
-              /*          
-              if (!docSetup.getItemValueString("patch").equals("")){
-            	  fileName = docSetup.getItemValueString("patch");
-              }              
-             
-              InputStream inStream = null;
-          	OutputStream outStream = null;
-           
-           
-              	    File qfrom =new File(System.getProperty("java.io.tmpdir") + "export.xls");
-              	    File qto =new File(fileName + "export.xls");
-              	  System.out.println("from " + System.getProperty("java.io.tmpdir") + "export.xls" + " to " + fileName + "export.xls");
-              	    inStream = new FileInputStream(qfrom);
-              	    outStream = new FileOutputStream(qto);
-               	    byte[] buffer = new byte[1024];
-                 	int length;
-              	    //copy the file content in bytes 
-              	    while ((length = inStream.read(buffer)) > 0){
-              	    	outStream.write(buffer, 0, length);
-              	    }
-              	    inStream.close();
-              	    outStream.close();
-              	    System.out.println("File is copied successful!");
-              	    */
-//////////////////////
               Document memo = db.createDocument();
               memo.replaceItemValue("Form", "memo");
               memo.replaceItemValue("SendTo", "CN=Вепринский Виталий Львович/O=PKC");//"CN=Волохова Анна Викторовна/O=PKC"); //);//docSetup.getItemValue("SignBy"));
