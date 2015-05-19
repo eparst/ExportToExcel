@@ -19,7 +19,6 @@ public class JavaAgent extends AgentBase {
     public void NotesMain() {
     	Session session = null;
 
-          // (Your code goes here)
           try {
               session = getSession();
 //              AgentContext agentContext = session.getAgentContext();
